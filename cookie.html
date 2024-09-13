@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<script type = "text/javascript">
+    var msg =
+      "     Hello Kitty Cliker ^^ ";
+    var chars = Array.from(msg);
+
+    function scrollTitle() {
+      chars.push(chars.shift());
+      document.title = chars.join("");
+      window.setTimeout(scrollTitle, 120);
+    }
+
+    (function() {
+      scrollTitle();
+    })();
+  </script>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="cookie.css">
+    <script src="cookie.js" defer></script>
+      
+
+
+</head>
+
+<body>
+    
+    <h1>Hello Kitty</h1>
+    
+    <img id="cookie" src="Hello Kitty Music.jpg" alt="" width="200px">
+
+    <p id="score"> 
+        Her kommer poengsummen
+    </p>
+
+</body>
+
+</html>
